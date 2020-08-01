@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var reverseButton: UIButton!
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
+    @IBOutlet weak var widthConstraint : NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +99,14 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.25){
             buttonBackground.alpha = 0.3
             sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+    }
+    
+    @IBAction func buttonTapped(_ sender: UIButton){
+        widthConstraint.constant = 320
+        
+        UIView.animate(withDuration: 0.5){
+            self.view.layoutIfNeeded()
         }
     }
     

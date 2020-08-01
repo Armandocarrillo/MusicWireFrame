@@ -63,6 +63,7 @@
                                         <rect key="frame" x="132" y="0.0" width="60" height="60"/>
                                         <state key="normal" image="pause"/>
                                         <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kma-yY-U77"/>
                                             <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckY-2w-hYW"/>
                                             <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="j3z-xL-fP4"/>
                                             <action selector="touchedUpside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeQ-eh-n2j"/>
@@ -124,6 +125,7 @@
                         <outlet property="playPauseButton" destination="9uz-cz-Rd8" id="31f-OK-vy9"/>
                         <outlet property="reverseBackground" destination="9Hg-3Z-eNp" id="r5l-Zp-65f"/>
                         <outlet property="reverseButton" destination="ccZ-CA-XJC" id="hWo-NX-Nrw"/>
+                        <outlet property="widthConstraint" destination="ezY-wT-sXP" id="9aZ-kw-GCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
